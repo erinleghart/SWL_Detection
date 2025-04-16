@@ -6,6 +6,7 @@ This repository contains MATLAB scripts used to detect and analyze spectrum widt
 - PPI_SWL_Climatology.m: Main script for identifying and extracting SWLs from KASPR plan position indicator (PPI) scans. Outputs SWL height, thickness, azimuth, magnitude, and scan duration.
 - VPT_SWL_Climatology.m: Main script for identifying and extracting SWLs from vertically pointing time-height (VPT) radar profiles. Outputs SWL height, thickness, magnitude, and duration.
 - Supporting functions (PPI_convolution.m, VPT_convolution.m, kaspr_variables_PPI.m, kaspr_variables_VPT.m, PPI_SWL_properties.m, and VPT_SWL_properties.m) are required to run the full workflow.
+- kaspr_dates.csv provides required information for event dates, numbers, and types.
 
 ### Input Data Format
 Each script expects input radar files in NetCDF format named using the convention:
@@ -22,3 +23,4 @@ These files must be stored in subdirectories (kaspr_ppi/ and kaspr_vpt/) relativ
 ### Associated Publications
 If you use this code or dataset in your work, please cite the associated manuscript(s):
 - Leghart, E. C., et al. (2025, in review): Climatology of Spectrum Width Layers in Northeast U.S. Winter Storms Using KASPR Radar Observations. Journal of Applied Meteorology and Climatology.
+- Leghart, E. C., et al (2025, in review): Layers of enhanced spectrum width within Northeast United States coastal winter storms. Dryad, Dataset, https://doi.org/10.5061/dryad.5dv41nshp.
