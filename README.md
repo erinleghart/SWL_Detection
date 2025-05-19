@@ -21,6 +21,5 @@ These files must be stored in subdirectories (kaspr_ppi/ and kaspr_vpt/) relativ
 4. Export climatology: SWL properties are saved to .csv output files for analysis and visualization.
 
 ### Associated Publications
-If you use this code or dataset in your work, please cite the associated manuscript(s):
 - Leghart, E. C., et al. (2025, in review): Characteristics of Layers of Enhanced Spectrum Width within Northeast United States Coastal Winter Storms. Monthly Weather Review.
 - Leghart, Erin; Colle, Brian; Oue, Mariko et al. (2025). Layers of enhanced spectrum width within Northeast United States coastal winter storms [Dataset]. Dryad. https://doi.org/10.5061/dryad.5dv41nshp. 
