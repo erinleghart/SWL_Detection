@@ -8,7 +8,7 @@ This repository contains MATLAB scripts used to detect and analyze spectrum widt
 - kaspr_dates.csv provides required information for event dates, numbers, and types.
 
 ### Required Input Data
-- KASPR_PPI_SWL_MOMENTS_yyyymmdd-HHMMSS.nc: The KASPR moments files are required to run PPI_SWL_Climatology.m
+- KASPR_PPI_SWL_MOMENTS_yyyymmdd-HHMMSS.nc: The KASPR moments files. These files contain the following variables: LIST THEM
 - identified_melting_layers_KASPR_PPI.csv: A table containing the dates, times, altitudes, and thicknesses of melting layers within the KASPR 15 degree PPI dataset. This table is used to remove any SWLs which extend into or are contained within the melting layer, as melting influences SW (see Leghart et al. 2026 for more details).
 - kaspr_dates.csv: A table which provides required information for event dates, numbers, and types.
 
