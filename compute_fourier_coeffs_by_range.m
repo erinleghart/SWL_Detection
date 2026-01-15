@@ -1,11 +1,14 @@
 function coeffs = compute_fourier_coeffs_by_range(vr, azimuths_rad, min_points)
 % Computes the a0, a1, b1, a2, b2 Fourier coefficients at each range gate
-% using the Browning & Wexler method.
+% using the Browning & Wexler 1968 method from:
+% Browning, K. A., and R. Wexler, 1968: The Determination of Kinematic Properties
+% of a Wind Field Using Doppler Radar. J. Appl. Meteor. Climatol., 7, 105–113,
+% https://doi.org/10.1175/1520-0450(1968)007<0105:TDOKPO>2.0.CO;2.
 %
 % Inputs:
-%   vr            - Radial velocity matrix [n_azimuths × n_ranges]
-%   azimuths_rad  - Azimuth angles in radians [n_azimuths × 1]
-%   min_points    - Minimum # of valid Vr values to attempt fit
+%   vr - Radial velocity matrix [n_azimuths × n_ranges]
+%   azimuths_rad - Azimuth angles in radians [n_azimuths × 1]
+%   min_points - Minimum # of valid Vr values to attempt fit
 %
 % Output:
 %   coeffs struct with fields a0, a1, b1, a2, b2 (1 × n_ranges)
