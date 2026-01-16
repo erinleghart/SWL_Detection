@@ -7,20 +7,18 @@
 
 %% User-Defined Input Directories
 
-% kasprPPIDataDir = '/path/to/kasprdata/';
-% data_save_dir = '/path/to/save/directory/';
-kasprPPIDataDir = '/Volumes/DOINGMYBEST/Data/KASPR/SWLs/swl_files/v4PPI/';
-data_save_dir = '/Volumes/DOINGMYBEST/Data/KASPR/SWLs/repository_data/';
+kasprPPIDataDir = '/path/to/kasprdata/';
+data_save_dir = '/path/to/save/directory/';
 
 %% Load Data & Set Constants
 
-dates = readtable('/Volumes/DOINGMYBEST/Data/KASPR/SWLs/repository_data/kaspr_dates_submitted.csv');
+dates = readtable('/path/to/kaspr_dates.csv');
 datalist = dir([kasprPPIDataDir, 'KASPR_PPI_SWL_MOMENTS_', '*.nc']);
 disp([num2str(length(datalist)), ' KASPR PPI files']);
 
 % Melting Layer Dataset (removed at end)
 % melting_layers = '/path/to/kaspr_melting_layers.csv'
-melting_layers = readtable('/Volumes/DOINGMYBEST/Data/KASPR/SWLs/repository_data/identified_melting_layers_KASPR_PPI.csv');
+melting_layers = readtable('/path/to/identified_melting_layers_KASPR_PPI.csv');
 
 %% Preallocate lists to store SWL characteristics
 
